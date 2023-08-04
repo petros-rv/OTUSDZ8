@@ -77,8 +77,8 @@ Vagrant.configure("2") do |config|
 #    config.vm.provision "file", source: "./test.sh", destination: "/tmp/test.sh"
 config.vm.provision "shell", inline: <<-SHELL
        
-        echo -e "\033[33m  1. Задание №1: Написать service, который будет раз в 30 секунд мониторить лог на предмет наличия ключевого слова ‘ALERT’
-        echo -e "\033[33m  1.1 Создадим файл настроек /etc/sysconfig/watchlog 
+        echo -e "\033[33m  1. Задание №1: Написать service, который будет раз в 30 секунд мониторить лог на предмет наличия ключевого слова ‘ALERT’"
+        echo -e "\033[33m  1.1 Создадим файл настроек /etc/sysconfig/watchlog" 
         
         touch /etc/sysconfig/watchlog
         echo  WORD='"ALERT"' >> /etc/sysconfig/watchlog
